@@ -8,7 +8,7 @@ int main()
     printf("Enter the Number to be shifted: ");
     scanf("%d", &a);
     printf("Enter the bit positions: ");
-    scanf("%d , %d", &i, &j);
+    scanf("%d %d", &i, &j);
     if ((a & (1 << i)) != (a & (1 << j)))
     {
         a = a ^ (1 << i);
